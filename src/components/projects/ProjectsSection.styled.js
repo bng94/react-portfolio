@@ -1,0 +1,148 @@
+import styled from "styled-components";
+
+export const SingleProject = styled.div`
+  display: flex;
+  align-items: center;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    margin: 10rem 0;
+
+    a {
+      img {
+        transform: rotateY(-30deg);
+      }
+
+      &:hover {
+        img {
+          transform: rotateY(0deg);
+        }
+      }
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.mobile}) {
+    flex-direction: column;
+
+    &:nth-child(even) {
+      flex-direction: column;
+
+      a {
+        margin-bottom: 3rem;
+
+        img {
+          transform: rotateY(0deg);
+        }
+      }
+    }
+  }
+`;
+export const ProjectImageContainer = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  perspective: 1000px;
+  img {
+    width: 90%;
+    border-radius: 20px;
+    transform: rotateY(30deg);
+    transition: all 650ms ease-in-out;
+    z-index: 3;
+    opacity: 0.5;
+    /*border-radius: 20px 20px 0 0;
+    -webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, 
+  rgba(255,255,255,0.3) 0%, transparent 40%, transparent 100%); */
+  }
+
+  &:hover {
+    img {
+      transform: rotateY(0deg);
+      opacity: 0.8;
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.mobile}) {
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+
+    img {
+      transform: rotateY(0deg);
+      width: 80%;
+      border-radius: 9px;
+    }
+  }
+`;
+
+export const SlantedCard = styled.div`
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 650ms ease-in-out;
+  transform: skew(3deg, -3deg) rotateY(30deg);
+  z-index: 2;
+
+  @media (max-width: ${(props) => props.theme.mobile}) {
+    transform: skew(3deg, -3deg) rotateY(0deg);
+    width: 80%;
+    border-radius: 9px;
+  }
+`;
+
+export const ProjectDescription = styled.div`
+  flex: 1;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    background: linear-gradient(
+      to right,
+      ${(props) => props.theme.colors.aliceBlue} 0%,
+      ${(props) => props.theme.colors.colbatBlue} 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      margin: 2rem 2rem 2rem 0;
+      font-size: 1.2rem;
+
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+`;
+
+export const Tags = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+
+  span {
+    margin-bottom: 0.5rem;
+    background: ${(props) => props.theme.colors.darkCyanBlue};
+    display: inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 1rem;
+  }
+`;
