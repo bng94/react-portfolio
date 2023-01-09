@@ -19,7 +19,8 @@ export const ExperiencesData = [
     description: [
       "Graduated with a GPA of 3.95",
       "Acquired knowledge of Software Development Life Cycle and Project Management for the start of a project to end of a project life cycle",
-      "Boosted my knowledge of Mobile and Web Development Standards",
+      "Acquired knowledge and certificate to take the PM exam from taking IS Project and Change Management course.",
+      "Completed an Mobile Web Development course and learned about AngularJS and native development.",
     ],
   },
   {
@@ -29,7 +30,7 @@ export const ExperiencesData = [
     dateRange: "Oct 2016 - Dec 2017",
     description: [
       "Maintained computer software applications in use of classrooms and offices to ensure smooth performance for all educators and students.",
-      "Oversaw the use of technology equipment by teaching and providing assistances to staff and students to use the computers and tablets.",
+      "Oversaw the use of technology equipment by teaching and providing assistance to staff and students to use the computers and tablets.",
       "Assessed, diagnosed, and solved hardware and software problems throughout the school",
     ],
   },
@@ -41,7 +42,7 @@ export const ExperiencesData = [
     description: [
       "Learned how to create mobile apps for Google Play Store.",
       "Learned algorithms for faster solutions to problem-solving operations",
-      "Acquired knowledges of best way to efficiently organizie data in the code",
+      "Acquired knowledge of best way to efficiently organize data in the code",
     ],
   },
 ];

@@ -80,8 +80,7 @@ export const StyledTabButton = styled.button`
   border-right: none;
   border-left: 2px solid var(--borderColor);
   background-color: transparent;
-  color: ${(props) =>
-    props.isActive ? "var(--green)" : "var(--buttonHoverColor)"};
+  color: ${(props) => (props.isActive ? "var(--green)" : "var(--white)")};
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   text-align: left;
