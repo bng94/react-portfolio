@@ -16,7 +16,6 @@ export const GlobalStyles = createGlobalStyle`
     --bgColor: rgba(2, 12, 27, 1);
     --scrollBarColor: rgba(32,46,70);
     --borderColor: rgba(46,90,136);
-    --buttonHoverColor: rgba(192,164,201);
 }
 
 *,
