@@ -99,8 +99,8 @@ export const ProjectDescription = styled.div`
     margin: 0 0 2rem 0;
     background: linear-gradient(
       to right,
-      ${(props) => props.theme.colors.aliceBlue} 0%,
-      ${(props) => props.theme.colors.colbatBlue} 100%
+      var(--aliceBlue) 0%,
+      var(--cobaltBlue) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -138,7 +138,7 @@ export const Tags = styled.div`
 
   span {
     margin-bottom: 0.5rem;
-    background: ${(props) => props.theme.colors.darkCyanBlue};
+    background: var(--darkCyanBlue);
     display: inline-block;
     padding: 7px;
     border-radius: 5px;

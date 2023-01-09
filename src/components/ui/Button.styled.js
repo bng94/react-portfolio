@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const Button = styled.a`
-  background: ${({ primary, theme }) =>
-    primary ? theme.colors.green : "none"};
-  color: ${({ primary, theme }) =>
-    primary ? theme.colors.white : theme.colors.green};
+  background: ${({ primary }) => (primary ? "var(--green)" : "none")};
+  color: ${({ primary }) => (primary ? "var(--white)" : "var(--green)")};
   padding: 10px 20px;
   margin: ${({ margin }) => margin};
-  border: 2px solid ${({ theme }) => theme.colors.green};
+  border: 2px solid var(--green);
   border-radius: 5px;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
@@ -16,8 +14,7 @@ export const Button = styled.a`
   display: inline-block;
 
   &:hover {
-    background: ${({ primary, theme }) =>
-    primary ? "none" : theme.colors.green};
-    color: ${props => props.theme.colors.white};
+    background: ${({ primary }) => (primary ? "none" : "var(--green)")};
+    color: var(--white);
   }
 `;

@@ -67,7 +67,7 @@ export const StyledTabButton = styled.button`
   &:hover,
   &:active,
   &:focus {
-    color: ${(props) => props.theme.colors.green};
+    color: var(--green);
     outline: 0;
   }
   display: flex;
@@ -78,9 +78,10 @@ export const StyledTabButton = styled.button`
   border-top: none;
   border-bottom: none;
   border-right: none;
-  border-left: 2px solid #2e5a88;
+  border-left: 2px solid var(--borderColor);
   background-color: transparent;
-  color: ${(props) => (props.isActive ? props.theme.colors.green : "#c0c2c9")};
+  color: ${(props) =>
+    props.isActive ? "var(--green)" : "var(--buttonHoverColor)"};
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   text-align: left;
@@ -96,12 +97,12 @@ export const StyledTabButton = styled.button`
     min-width: 120px;
     padding: 0 15px;
     border-left: 0;
-    border-bottom: 2px solid #123;
+    border-bottom: 2px solid rgba(17, 34, 51);
     text-align: center;
   }
   &:hover,
   &:focus {
-    background-color: #123;
+    background-color: rgba(17, 34, 51);
   }
 `;
 
@@ -113,7 +114,7 @@ export const StyledHighlight = styled.div`
   width: 2px;
   height: 42px;
   border-radius: 4px;
-  background: ${(props) => props.theme.colors.green};
+  background: var(--green);
   transform: translateY(calc(${({ activeTabId }) => activeTabId} * 42px));
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s;
@@ -158,7 +159,7 @@ export const StyledTabPanel = styled.div`
         content: "•";
         position: absolute;
         left: 0;
-        color: ${(props) => props.theme.colors.green};
+        color: var(--green);
       }
     }
   }
@@ -168,12 +169,12 @@ export const StyledTabPanel = styled.div`
     font-weight: 500;
     line-height: 1.3;
     .company {
-      color: ${(props) => props.theme.colors.green};
+      color: var(--green);
     }
   }
   .range {
     margin-bottom: 25px;
-    color: ${(props) => props.theme.colors.lightShadeBlue};
+    color: var(--lightShadeBlue);
     font-family: "Poppins", sans-serif;
     font-size: 13px;
   }

@@ -35,21 +35,21 @@ export const SingleNoteworthyProjects = styled.div`
     margin: 1.5rem 0;
     background: linear-gradient(
       to right,
-      ${(props) => props.theme.colors.aliceBlue} 0%,
-      ${(props) => props.theme.colors.colbatBlue} 100%
+      var(--aliceBlue) 0%,
+      var(--cobaltBlue) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   p {
-    color: ${(props) => props.theme.colors.white};
+    color: var(--white);
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     a {
-      color: ${(props) => props.theme.colors.white};
+      color: var(--white);
       &:hover {
-        color: ${(props) => props.theme.colors.green};
+        color: var(--green);
       }
     }
   }
@@ -67,7 +67,7 @@ export const IconsWrapper = styled.div`
   font-size: 5rem;
   justify-content: space-between;
   align-items: start;
-  color: ${(props) => props.theme.colors.babyBlueEyes};
+  color: var(--babyBlueEyes);
 `;
 
 export const SvgIconLink = styled.a`
@@ -75,9 +75,9 @@ export const SvgIconLink = styled.a`
   display: flex;
   place-self: center;
   height: 20px;
-  color: ${(props) => props.theme.colors.babyBlueEyes};
+  color: var(--babyBlueEyes);
   &:hover {
-    color: ${(props) => props.theme.colors.green};
+    color: var(--green);
   }
 
   svg {
@@ -96,7 +96,7 @@ export const Tags = styled.div`
   align-items: flex-end;
   flex-wrap: wrap;
   height: 100%;
-  color: ${(props) => props.theme.colors.lightBlue};
+  color: var(--lightBlue);
 
   span {
     display: inline-block;

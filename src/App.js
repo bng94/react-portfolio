@@ -13,22 +13,6 @@ import { ExperienceSection } from "./components/experience/ExperienceSection";
 
 const App = () => {
   const theme = {
-    colors: {
-      white: "rgba(217, 231, 252,1)",
-      darkCyanBlue: "rgba(14, 33, 60)",
-      navBackground: "rgba(2, 12, 27, 0.8)",
-      background: "rgba(2, 12, 27, 1)",
-      lightNavyBlue: "rgba(4, 22, 48, 1)",
-      green: "rgba(0, 206, 158, 1)", //100, 255, 218
-      orange: "rgba(249, 105, 14, 1)",
-      purple: "rgba(102, 51, 153, 1)",
-      cyan: "rgba(0,255,255)",
-      lightBlue: "rgba(119, 150, 203)",
-      lightShadeBlue: "rgba(168, 178, 209)",
-      babyBlueEyes: "rgba(163, 188, 249)",
-      aliceBlue: "rgba(227, 242, 253)",
-      colbatBlue: "rgba(13, 71, 161)",
-    },
     mobile: "768px",
   };
 

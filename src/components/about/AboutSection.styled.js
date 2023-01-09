@@ -75,7 +75,7 @@ export const DarkCircle = styled.div`
   border-radius: 50%;
   position: absolute;
   z-index: 3;
-  background: ${(props) => props.theme.colors.navyBlue};
+  background: var(--navyBlue);
 `;
 
 export const GradientCircle = styled.div`
@@ -87,9 +87,9 @@ export const GradientCircle = styled.div`
   animation: ${rotate} 5s linear infinite;
   background: linear-gradient(
     to right,
-    ${(props) => props.theme.colors.aliceBlue} 0%,
-    ${(props) => props.theme.colors.green} 50%,
-    ${(props) => props.theme.colors.colbatBlue} 100%
+    var(--aliceBlue) 0%,
+    var(--green) 50%,
+    var(--cobaltBlue) 100%
   );
 `;
 
@@ -105,7 +105,7 @@ export const AboutContent = styled.div`
     text-align: left;
     margin-bottom: 1.45rem;
     span {
-      color: ${(props) => props.theme.colors.lightBlue};
+      color: var(--lightBlue);
     }
     ul {
       display: grid;

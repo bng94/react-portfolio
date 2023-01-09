@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
   width: 100%;
   padding: 2.5rem;
-  color: ${(props) => props.theme.colors.lightBlue};
+  color: var(--lightBlue);
   text-align: center;
   font-size: 16px;
   display: flex;
@@ -37,7 +37,7 @@ export const FooterSocialIcon = styled.a`
   align-items: center;
   justify-content: space-around;
   svg {
-    color: ${(props) => props.theme.colors.lightBlue};
+    color: var(--lightBlue);
     transition: all 650ms ease-in-out;
   }
 

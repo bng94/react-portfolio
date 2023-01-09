@@ -25,7 +25,7 @@ export const Nav = styled.nav`
   position: fixed;
   z-index: 98;
   transition: all 1s ease-in-out;
-  background: ${(props) => props.theme.colors.navBackground};
+  background: var(--navBgColor);
   top: ${(props) => (props.scrollDirection === "down" ? "-80px" : "0px")};
 `;
 
@@ -36,8 +36,7 @@ export const Logo = styled.img`
 
 export const MenuIcon = styled.div`
   cursor: pointer;
-  background: ${(props) =>
-    props.menuOpen ? "none" : props.theme.colors.lightNavyBlue};
+  background: ${(props) => (props.menuOpen ? "none" : "var(--lightNavyBlue)")};
   transition: all 650ms ease-in-out;
   padding: 0.7rem;
   border-radius: 5px;
@@ -57,8 +56,8 @@ export const LineOne = styled.div`
   margin: 5px 0;
   background: linear-gradient(
     135deg,
-    ${(props) => props.theme.colors.colbatBlue} 0%,
-    ${(props) => props.theme.colors.aliceBlue} 100%
+    var(--cobaltBlue) 0%,
+    var(--aliceBlue) 100%
   );
   transition: all 650ms ease-in-out;
   transform: ${({ menuOpen }) =>
@@ -71,8 +70,8 @@ export const LineTwo = styled.div`
   margin: 5px 0;
   background: linear-gradient(
     135deg,
-    ${(props) => props.theme.colors.colbatBlue} 0%,
-    ${(props) => props.theme.colors.aliceBlue} 100%
+    var(--cobaltBlue) 0%,
+    var(--aliceBlue) 100%
   );
   opacity: ${({ menuOpen }) => (menuOpen ? 0 : 1)};
   transition: all 650ms ease-in-out;
@@ -85,8 +84,8 @@ export const LineThree = styled.div`
   margin-left: ${({ menuOpen }) => (menuOpen ? 0 : "15px")};
   background: linear-gradient(
     135deg,
-    ${(props) => props.theme.colors.colbatBlue} 0%,
-    ${(props) => props.theme.colors.aliceBlue} 100%
+    var(--cobaltBlue) 0%,
+    var(--aliceBlue) 100%
   );
   transition: all 650ms ease-in-out;
   transform: ${({ menuOpen }) =>
@@ -103,7 +102,7 @@ export const NavList = styled.ul`
   @media (max-width: ${(props) => props.theme.mobile}) {
     width: 24rem;
     height: 100vh;
-    background: ${(props) => props.theme.colors.lightNavyBlue};
+    background: ${(props) => "var(--lightNavyBlue)"};
     top: 0;
     right: ${({ menuOpen }) => (menuOpen ? "0" : "-24rem")};
     position: fixed;
@@ -130,7 +129,7 @@ export const NavItem = styled.li`
 
 export const NavLink = styled.a`
   text-transform: uppercase;
-  color: ${(props) => props.theme.colors.white};
+  color: var(--white);
   letter-spacing: 1.5px;
 
   &::after {
@@ -138,7 +137,7 @@ export const NavLink = styled.a`
     display: block;
     height: 3px;
     width: 0%;
-    background: ${(props) => props.theme.colors.cyan};
+    background: var(--cyan);
     transition: all ease-in-out 300ms;
   }
 

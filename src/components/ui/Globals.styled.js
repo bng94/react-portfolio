@@ -1,6 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+:root {
+    --white: rgba(217, 231, 252,1);
+    --green: rgba(0, 206, 158, 1); 
+    --cyan: rgba(0,255,255);
+    --darkCyanBlue: darkCyanBlue: rgba(14, 33, 60);
+    --lightNavyBlue: rgba(4, 22, 48, 1);
+    --lightBlue: rgba(119, 150, 203);
+    --lightShadeBlue: rgba(168, 178, 209);
+    --babyBlueEyes: rgba(163, 188, 249);
+    --aliceBlue: rgba(227, 242, 253);
+    --cobaltBlue: rgba(13, 71, 161);
+    --navBgColor: rgba(2, 12, 27, 0.8);
+    --bgColor: rgba(2, 12, 27, 1);
+    --scrollBarColor: rgba(32,46,70);
+    --borderColor: rgba(46,90,136);
+    --buttonHoverColor: rgba(192,164,201);
+}
 
 *,
 *::before,
@@ -13,18 +30,18 @@ export const GlobalStyles = createGlobalStyle`
 html{
     font-family: "Share Tech Mono", monospace;
     scroll-behavior: smooth;
-    color: ${({ theme }) => theme.colors.white};
-    background: ${({ theme }) => theme.colors.background};
+    color: var(--white);
+    background: var(--bgColor);
     font-size: 12px;
 }
 
 a{
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.green};
+    color: var(--green);
     transition: all 250ms ease-in-out;
 
      &:hover{
-        color: ${({ theme }) => theme.colors.cyan};
+        color: var(--cyan);
      }
 }
 
@@ -35,8 +52,8 @@ ul{
 hr{
     background: linear-gradient(
         to right,
-        ${({ theme }) => theme.colors.aliceBlue} 0%,
-        ${({ theme }) => theme.colors.colbatBlue} 100%
+        var(--aliceBlue) 0%,
+        var(--cobaltBlue) 100%
     );
     border:0;
     height: 1px
@@ -57,12 +74,12 @@ hr{
 
 }
 ::-webkit-scrollbar-thumb{
-    background: #31435f;
+    background: rgba(49,67,95);
     border-radius: 20px;
 }
 /** 
 ::-webkit-scrollbar-thumb:hover{
-    background: #202e46;
+    background: var(--scrollBarColor);
 }*/
 
 `;

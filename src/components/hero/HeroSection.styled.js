@@ -53,7 +53,7 @@ export const StyledHeroSection = styled.section`
 export const HeroContext = styled.div`
   width: 100%;
   max-width: 58rem;
-  color: ${(props) => props.theme.colors.white};
+  color: var(--white);
 
   h1 {
     margin: 1rem 0;
@@ -74,8 +74,8 @@ export const HeroContext = styled.div`
     margin: 1.5rem 0;
     background: linear-gradient(
       to right,
-      ${(props) => props.theme.colors.aliceBlue} 0%,
-      ${(props) => props.theme.colors.colbatBlue} 100%
+      var(--aliceBlue) 0%,
+      var(--cobaltBlue) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -109,11 +109,11 @@ export const StyledArrowDown = styled.a`
 
   svg {
     font-size: 30px;
-    color: ${(props) => props.theme.colors.white};
+    color: var(--white);
     animation: ${bounce} 2s infinite 8s;
 
     &:hover {
-      color: ${(props) => props.theme.colors.aliceBlue};
+      color: var(--aliceBlue);
     }
   }
 `;
@@ -139,14 +139,14 @@ export const HeroSocialIcon = styled.a`
   margin-bottom: 10px;
 
   svg {
-    color: ${(props) => props.theme.colors.lightBlue};
+    color: var(--lightBlue);
     transition: all 650ms ease-in-out;
   }
 
   &:hover {
     svg {
       animation: ${rotate} 1.5s linear infinite;
-      color: ${(props) => props.theme.colors.aliceBlue};
+      color: var(--aliceBlue);
     }
   }
 
