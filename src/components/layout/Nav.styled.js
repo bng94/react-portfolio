@@ -102,7 +102,7 @@ export const NavList = styled.ul`
   @media (max-width: ${(props) => props.theme.mobile}) {
     width: 24rem;
     height: 100vh;
-    background: ${(props) => "var(--lightNavyBlue)"};
+    background: var(--lightNavyBlue);
     top: 0;
     right: ${({ menuOpen }) => (menuOpen ? "0" : "-24rem")};
     position: fixed;
