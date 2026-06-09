@@ -20,7 +20,7 @@ export const ContactSection = () => {
     }
 
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   return (
     <Section id="contact">

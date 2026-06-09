@@ -24,7 +24,7 @@ export const AboutSection = () => {
       return;
     }
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   return (
     <Section id="about">
